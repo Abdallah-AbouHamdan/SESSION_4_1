@@ -29,8 +29,8 @@
             width: 90%;
         }
         .img1{
-            height: 40%;
-            width: 40%;
+            height: 90%;
+            width: 90%;
             margin-right: 100px;
         }
         .div-img{
@@ -96,6 +96,11 @@
             width: 25%;
             height: 40%;
             margin-bottom: 27%;
+            transition: all 0.4s ease;
+        }
+        .i1:hover{
+            width: 30%;
+            height: 45%;
         }
         .div5{
             height: 100%;
@@ -131,6 +136,7 @@
         input{
             border-radius: 1000px;
             border: none;
+            transition: all 0.4s ease;
         }
         .demail{
             height: 50%;
@@ -143,30 +149,56 @@
         .email1{
             height: 80%;
             width: 40%;
+            
+        }
+        input:hover{
+            height: 90%;
+            width: 60%;
         }
         .cnt{
             display: flex;
             gap:70px;
         }
-        img{
-        box-shadow: 0 10px 20px rgb(0,0,0,0.5);
+        .img5{
+        box-shadow: 0 60px 50px rgb(0 , 0 , 0 , 0.6);
         }
         h2{
             color: white;
         }
+        a.slide-underline {
+        position: relative;
+         text-decoration: none;
+         color: #ffffff;
+        }
+
+        a.slide-underline::after {
+         content: '';
+          position: absolute;
+          width: 0;
+         height: 2px;
+         bottom: 0;
+         left: 0;
+         background-color: #c8ffb0;
+         transition: width 0.3s ease, background-color 0.3s;
+        }
+
+          a.slide-underline:hover::after {
+        width: 100%;
+        }
+
     </style>
 </head>
 <body class="section">
     <div class="sectiondiv">
         <header class="header">
             <div class="div-img">
-                <img  class="img1" src="nature_img.png" alt="">
+                <img  class="img1" src="imageee.png" alt="">
             </div>
             <div>
                 <ul class="links">
-                    <li><a href="/forest"><p>Forest</p></a></li>
-                    <li><a href="/mountain"><p>Mountain</p></a></li>
-                    <li><a href="/river"><p>River</p></a></li>
+                    <li><a class="slide-underline" href="/forest"><p>Forest</p></a></li>
+                    <li><a class="slide-underline" href="/mountain"><p>Mountain</p></a></li>
+                    <li><a class="slide-underline" href="/river"><p>River</p></a></li>
                 </ul>
             </div>
         </header>
@@ -186,9 +218,9 @@
                       things on Earth, including the physical environment and its processes. It is the source of life, providing essential resources
                        like oxygen, sunlight, soil, and water. Nature also includes diverse ecosystems, from forests and oceans to freshwater and the atmosphere. </h3></div> 
                 <div class="div5">
-                <img class="i1" src="forest.jpg" alt="forest">
-                <img class="i1" src="river.jpg" alt="river">
-                <img class="i1" src="mountain.avif" alt="mountain">
+                <img class="i1 img5" src="forest.jpg" alt="forest">
+                <img class="i1 img5" src="river.jpg" alt="river">
+                <img class="i1 img5" src="mountain.avif" alt="mountain">
                 </div>
             </article>
         </main>
