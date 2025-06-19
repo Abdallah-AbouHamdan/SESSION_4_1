@@ -10,18 +10,56 @@
             padding: 0;
             box-sizing: border-box;
         }
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #c4ebf9;
+        }.header{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #02bfb1;
+            margin: 5%;
+            margin-bottom: 2%;
+            margin-top: 3%;
+            height: 17%;
+            width: 90%;
+        }
+        .img1{
+            height: 40%;
+            width: 40%;
+            margin-right: 100px;
+        }
+        .div-img{
+            margin-right: 500px;
+        }
+        .links{
+            list-style: none;
+            display: flex;
+            margin-right: 100px;
+            gap:10%;
+        }
+        p{
+            font-size: 40px;
+        }
+        a{
+            color:white;
+           text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="nature_img.png" alt="">
+    <header class="header">
+        <div class="div-img">
+            <img  class="img1" src="nature_img.png" alt="">
         </div>
         <div>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+            <ul class="links">
+                <li><a href="/forest"><p>Forest</p></a></li>
+                <li><a href="/mountain"><p>Mountain</p></a></li>
+                <li><a href="/river"><p>River</p></a></li>
             </ul>
         </div>
     </header>
@@ -43,6 +81,7 @@
         </article>
     </main>
     <footer>
+        
     </footer>
 </body>
 </html>
